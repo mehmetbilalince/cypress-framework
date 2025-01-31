@@ -1,24 +1,35 @@
 name: End-to-end tests
+
 on: push
+
 jobs:
   cypress-run:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      # Install NPM dependencies, cache them correctly
+        uses: actions/checkout@v4
+
+      # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v5
-              
-      - uses: actions/upload-artifact@v3
+        uses: cypress-io/github-action@v6
+        with:
+          install-command: npm install
+          runTests: true
+
+      # Store screenshots only if tests fail
+      - name: Upload Cypress screenshots
         if: failure()
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
           path: cypress/screenshots
-      # Test run video was always captured, so this action uses "always()" condition
-      - uses: actions/upload-artifact@v3
-        if: always()
+          if-no-files-found: ignore
+
+      # Upload Cypress videos
+      - name: Upload Cypress videos
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-videos
           path: cypress/videos
+          if-no-files-found: ignore
