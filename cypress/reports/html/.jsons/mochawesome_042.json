@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-31T20:48:47.081Z",
+    "end": "2025-01-31T20:48:53.682Z",
+    "duration": 6601,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fbe60819-dab4-4764-a1db-92a3ca9658c5",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/WebScrapping.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/WebScrapping.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "448107dd-4d48-400e-b710-607187d809f1",
+          "title": "web scrapping",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "write file to txt for products",
+              "fullTitle": "web scrapping write file to txt for products",
+              "timedOut": null,
+              "duration": 3422,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.step('Shopist.io sandalyeler sayfasina gidiyor');\ncy.visit('https://shopist.io/department/chairs');\ncy.step(\"Description class icindeki sandalye adi ve fiyatlarinin uzunlugu\");\ncy.get('.description').as('chairsPrice').its('length').should('eq', 9);\nconst results = [];\ncy.step('Sonuclari logluyoruz');\ncy.get('@chairsPrice').each(($el, index) => {\n  cy.log(\"Results: \" + index + \"- \" + $el.text());\n  results.push($el.text());\n}).then(() => {\n  cy.step('Sonuclari chairsPrice.txt file yazdiriyoruz');\n  cy.writeFile('CypressWriteFileDoc/chairsPrice.txt', results);\n});",
+              "err": {},
+              "uuid": "87893ca0-ab16-4bdb-8737-dbc641ef4100",
+              "parentUUID": "448107dd-4d48-400e-b710-607187d809f1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "87893ca0-ab16-4bdb-8737-dbc641ef4100"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3422,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

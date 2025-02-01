@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-31T20:44:53.055Z",
+    "end": "2025-01-31T20:45:05.146Z",
+    "duration": 12091,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1ff9551d-9ba3-460b-931a-a6521d701088",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/FixtureKullanimi.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/FixtureKullanimi.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3c971b16-6cec-4cd8-9cab-a8a5b4d1105d",
+          "title": "Cypress Fixture Commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress Fixture Data Kullanim Ornekler Invalid username Valid pasword",
+              "fullTitle": "Cypress Fixture Commands Cypress Fixture Data Kullanim Ornekler Invalid username Valid pasword",
+              "timedOut": null,
+              "duration": 4909,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"loginData\").as('credentials');\ncy.get('@credentials').then(data => {\n  cy.login(data.invalidUsername, data.validPassword);\n});",
+              "err": {},
+              "uuid": "637e3bae-d83f-48e0-a107-b939f5158b3f",
+              "parentUUID": "3c971b16-6cec-4cd8-9cab-a8a5b4d1105d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cypress Fixture Data Kullanim Ornekler Valid username Invalid password",
+              "fullTitle": "Cypress Fixture Commands Cypress Fixture Data Kullanim Ornekler Valid username Invalid password",
+              "timedOut": null,
+              "duration": 3263,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture(\"loginData\").as('credentials');\ncy.get('@credentials').then(data => {\n  cy.login(data.validUsername, data.invalidPassword);\n});",
+              "err": {},
+              "uuid": "77acb553-3f65-420e-b02d-02cadf5dfa4e",
+              "parentUUID": "3c971b16-6cec-4cd8-9cab-a8a5b4d1105d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "637e3bae-d83f-48e0-a107-b939f5158b3f",
+            "77acb553-3f65-420e-b02d-02cadf5dfa4e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8172,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-31T20:48:58.507Z",
+    "end": "2025-01-31T20:48:59.169Z",
+    "duration": 662,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d5500bf-5553-445c-a02a-970caf7f959b",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/WriteAndReadFile.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/WriteAndReadFile.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a32600d3-ea58-4ff4-87de-9554fdb477a5",
+          "title": "Cypress Write File",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "write file",
+              "fullTitle": "Cypress Write File write file",
+              "timedOut": null,
+              "duration": 275,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.writeFile('CypressWriteFileDoc/exampleFile.txt', 'Sifirdan Cypress Derslerine Hosgeldiniz.\\n');\ncy.writeFile('CypressWriteFileDoc/exampleFile.txt', 'Bu egitim serisinde sifirdan ileri seviyeye cypress ogreneceksiniz.', {\n  flag: 'a+'\n});",
+              "err": {},
+              "uuid": "24ab6527-1cd2-44a8-bb46-79d7736ad6c6",
+              "parentUUID": "a32600d3-ea58-4ff4-87de-9554fdb477a5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "24ab6527-1cd2-44a8-bb46-79d7736ad6c6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 275,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7913266a-9247-4556-b008-a96a012a9a82",
+          "title": "Cypress Read File",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "read file",
+              "fullTitle": "Cypress Read File read file",
+              "timedOut": null,
+              "duration": 67,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('CypressWriteFileDoc/exampleFile.txt').should('contain', 'egitim');",
+              "err": {},
+              "uuid": "27ddbe2e-6a43-43d5-b4b4-9add317f74d3",
+              "parentUUID": "7913266a-9247-4556-b008-a96a012a9a82",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "read file - 2",
+              "fullTitle": "Cypress Read File read file - 2",
+              "timedOut": null,
+              "duration": 68,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile('CypressWriteFileDoc/exampleFile.txt').then(text => {\n  expect(text).to.contain('egitim');\n});",
+              "err": {},
+              "uuid": "94e0eaed-4261-402f-b702-7cb401698490",
+              "parentUUID": "7913266a-9247-4556-b008-a96a012a9a82",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "27ddbe2e-6a43-43d5-b4b4-9add317f74d3",
+            "94e0eaed-4261-402f-b702-7cb401698490"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 135,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
