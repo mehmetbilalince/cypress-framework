@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-01T14:29:59.038Z",
+    "end": "2025-02-01T14:30:05.519Z",
+    "duration": 6481,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "adb49a6e-4f64-459b-962f-5f01ea2abc10",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/AliasThenEachWrap.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/AliasThenEachWrap.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2bb6ef6c-3695-4215-9c69-30f9530442ec",
+          "title": "Alias, Then, Each, Wrap",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Kullanim Örnekleri",
+              "fullTitle": "Alias, Then, Each, Wrap Kullanim Örnekleri",
+              "timedOut": null,
+              "duration": 3578,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let itemlength;\ncy.visit('https://shopist.io/');\ncy.get('.navbar-section a').should('be.visible').as('NavbarMenus'); //Alias olarak\ncy.get('@NavbarMenus').then($el => {\n  itemlength = $el.length;\n}).each(($el, index) => {\n  cy.log('Navbar Menu ' + index + \": \" + $el.text());\n  if ($el.text().includes('Cart')) {\n    cy.wrap($el).click();\n  }\n});",
+              "err": {},
+              "uuid": "ec8d969f-0e37-4767-ae48-70fbc0d35240",
+              "parentUUID": "2bb6ef6c-3695-4215-9c69-30f9530442ec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec8d969f-0e37-4767-ae48-70fbc0d35240"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3578,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

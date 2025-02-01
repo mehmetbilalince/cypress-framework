@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-01T14:37:56.568Z",
+    "end": "2025-02-01T14:38:04.616Z",
+    "duration": 8048,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "771e0e57-0aba-4557-a963-045aa38d2259",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/cypressStudio.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/cypressStudio.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "46005d6b-4073-4a71-9df6-f6620a7cc5e5",
+          "title": "Cypress Studio Kullanımı",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "ornek kullanim",
+              "fullTitle": "Cypress Studio Kullanımı ornek kullanim",
+              "timedOut": null,
+              "duration": 5529,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://shopist.io/');\n/* ==== Generated with Cypress Studio ==== */\ncy.get('.sofas > .menu-item-large-container > .menu-item-large').click();\ncy.get('.lighting > .menu-item-large-container > .menu-item-large').click();\ncy.get('.products > :nth-child(1) > :nth-child(1) > .product-card > img').click();\ncy.get('.modal-button').click();\ncy.get('.profile > .menu-item-large-container > .menu-item-large').click();\n/* ==== End Cypress Studio ==== */",
+              "err": {},
+              "uuid": "733bb313-5ee3-485b-86b0-e44c526e5e3d",
+              "parentUUID": "46005d6b-4073-4a71-9df6-f6620a7cc5e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "733bb313-5ee3-485b-86b0-e44c526e5e3d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5529,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

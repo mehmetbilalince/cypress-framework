@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-01T14:30:32.121Z",
+    "end": "2025-02-01T14:30:43.162Z",
+    "duration": 11041,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e19fd9f2-3700-4507-be3a-6232a857f7b6",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/BackForward.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/BackForward.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f65880df-477a-4640-b5d9-e6ee60f85ef5",
+          "title": "BackForward Kullanımı",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "tuningsepetim sayfasına gidip tarayıcıda ileri geri komutlarını öğreneceğiz",
+              "fullTitle": "BackForward Kullanımı tuningsepetim sayfasına gidip tarayıcıda ileri geri komutlarını öğreneceğiz",
+              "timedOut": null,
+              "duration": 7792,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://tuningsepetim.com/');\ncy.get('div#navbarCollapse div:nth-child(6) > a').click();\ncy.title().should('eq', \"Tuning Sepetim Ürünler - Tuning Sepetim\");\ncy.go('back'); //back geri gelmek demektir. back yerine -1 de yazılabilir\ncy.title().should('eq', \"Tuning Sepetim Ana Sayfa - Tuning Sepetim\");\ncy.go('forward'); //geri ürünler sayfasına döner. forward yerine 1 de yazılabilir\ncy.title().should('eq', \"Tuning Sepetim Ürünler - Tuning Sepetim\");",
+              "err": {},
+              "uuid": "430507ce-98da-4b44-a648-cc9e4b766979",
+              "parentUUID": "f65880df-477a-4640-b5d9-e6ee60f85ef5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "430507ce-98da-4b44-a648-cc9e4b766979"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7792,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

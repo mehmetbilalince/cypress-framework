@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-02-01T14:34:14.655Z",
+    "end": "2025-02-01T14:34:24.643Z",
+    "duration": 9988,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1cc4093d-8b60-4cde-8377-4440f2a3c000",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/PageObjectModel.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/PageObjectModel.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c6f9c2f9-128e-4556-b79b-9f67f83b8c01",
+          "title": "Page Object Model 1 Kullanımı",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "POM Örnekler",
+              "fullTitle": "Page Object Model 1 Kullanımı POM Örnekler",
+              "timedOut": null,
+              "duration": 6083,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/udemy-cypress-egitim/PageObjectModel.cy.js/Page Object Model 1 Kullanımı -- POM Örnekler (failed).png\"\n    ]\n  ]\n}",
+              "code": "homepagePom.navigate();\nhomepagePom.pricingBtn();",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (<unknown>:1:411)\n    at HTMLBodyElement.value [as insertBefore] (https://cmp.osano.com/AzqisZTSBrMdc3qLt/bb12d637-24a5-47ce-8788-92e13ca795cf/osano.js:2:149746)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:710:429)\n    at JK (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:712:31)\n    at Yc.IK (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:709:182)\n    at Yc.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:221:187)\n    at h.invoke (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:162:314)\n    at Ka (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:129:668)\n    at Ja (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:129:428)\n    at Yc.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:186:494)\n    at h.invoke (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:162:314)\n    at Ka (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:129:668)\n    at h.Il (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:129:1183)\n    at Be (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:197:782)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:608:7)\n    at zf (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:207:92)\n    at e (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:569:216)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:133:125)\n    at Array.<anonymous> (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:570:401)\n    at Object.execute (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:570:141)\n    at Kz (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:570:847)\n    at Oz (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:575:210)\n    at gB (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:593:273)\n    at jB (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:596:7)\n    at b.push (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:600:320)\n    at b.push (https://www.googletagmanager.com/gtag/js?id=G-66E86SXGKY&l=dataLayer&cx=c&gtm=45He51u0v76640536za200:708:170)\n    at <unknown> (https://www.googletagmanager.com/gtm.js?id=GTM-K8R2FS5:599:383)\n    at r (https://www.cypress.io/_astro/page.BHCURlcK.js:18:4519)\n    at o (https://www.cypress.io/:1:449)\n    at <unknown> (https://www.cypress.io/:1:822)",
+                "diff": null
+              },
+              "uuid": "59de015f-3e2e-4d18-a443-0c7753b4177d",
+              "parentUUID": "c6f9c2f9-128e-4556-b79b-9f67f83b8c01",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "59de015f-3e2e-4d18-a443-0c7753b4177d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6083,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

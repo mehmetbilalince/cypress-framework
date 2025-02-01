@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-01T14:29:49.950Z",
+    "end": "2025-02-01T14:29:54.226Z",
+    "duration": 4276,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7db5865b-6c5b-4f58-8ecd-04430a6022c2",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/403Hatasi.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/403Hatasi.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb7ad65e-bcb5-4c4b-b420-5a76511293dd",
+          "title": "403 hatasına karşı çözüm",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "403 hata sorunu",
+              "fullTitle": "403 hatasına karşı çözüm 403 hata sorunu",
+              "timedOut": null,
+              "duration": 1458,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.airnb.de/', {\n  headers: {\n    \"User-Agent\": \"axios/0.27.1\"\n  }\n});",
+              "err": {},
+              "uuid": "e570e35b-aaff-493c-b28d-a4b3e44e183d",
+              "parentUUID": "cb7ad65e-bcb5-4c4b-b420-5a76511293dd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e570e35b-aaff-493c-b28d-a4b3e44e183d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1458,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

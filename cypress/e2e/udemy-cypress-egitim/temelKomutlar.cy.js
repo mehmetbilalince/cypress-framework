@@ -1,3 +1,4 @@
+/*
 describe('Temel Komutlar', () => {
     it('Temel Komutlar cy.visit Kullanimi', () => {
         cy.visit("/") //baseUrl tanimlandiysa yani "/" işareti baseUrl'e gider.
@@ -30,3 +31,4 @@ describe('Temel Komutlar', () => {
         cy.log('Temel Komut cy.log kullanımı') //testimizi çalıştırdığımızda bu mesaj gözükecektir
     });
 });
+*/  

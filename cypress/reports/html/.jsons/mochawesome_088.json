@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-02-01T14:37:03.671Z",
+    "end": "2025-02-01T14:37:15.239Z",
+    "duration": 11568,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dc793f2c-f999-48da-8e55-ae88f42e22e5",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/Trigger.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/Trigger.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71ca065b-f606-4795-a9fd-c77d94e644ec",
+          "title": "Trigger Kullanimi",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Mouseover Kullanimi",
+              "fullTitle": "Trigger Kullanimi Mouseover Kullanimi",
+              "timedOut": null,
+              "duration": 7807,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/udemy-cypress-egitim/Trigger.cy.js/Trigger Kullanimi -- Mouseover Kullanimi (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit('https://www.amazon.de/');\ncy.get('a#icp-nav-flyout').trigger('mouseover');\ncy.get(\"div#nav-flyout-icp span:nth-child(1) > span > a\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<a href=\"/hz/cs/help?ref_=icp_language_help&amp;nodeId=201988560\" class=\"icp-flyout-learn-more\" aria-label=\"Learn more about changing your language of preference.\">Learn more</a>`\n\nThis element `<a.icp-flyout-learn-more>` is not visible because its parent `<div#nav-flyout-icp.nav-coreFlyout.nav-flyout>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element is not visible:\n\n`<a href=\"/hz/cs/help?ref_=icp_language_help&amp;nodeId=201988560\" class=\"icp-flyout-learn-more\" aria-label=\"Learn more about changing your language of preference.\">Learn more</a>`\n\nThis element `<a.icp-flyout-learn-more>` is not visible because its parent `<div#nav-flyout-icp.nav-coreFlyout.nav-flyout>` has CSS property: `display: none`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (https://www.amazon.de/__cypress/runner/cypress_runner.js:144726:58)\n    at Object.isStrictlyVisible (https://www.amazon.de/__cypress/runner/cypress_runner.js:144740:10)\n    at runAllChecks (https://www.amazon.de/__cypress/runner/cypress_runner.js:112296:26)\n    at retryActionability (https://www.amazon.de/__cypress/runner/cypress_runner.js:112364:16)\n    at tryCatcher (https://www.amazon.de/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://www.amazon.de/__cypress/runner/cypress_runner.js:4285:29)\n    at whenStable (https://www.amazon.de/__cypress/runner/cypress_runner.js:143535:68)\n    at <unknown> (https://www.amazon.de/__cypress/runner/cypress_runner.js:143476:14)\n    at tryCatcher (https://www.amazon.de/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.amazon.de/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.amazon.de/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://www.amazon.de/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://www.amazon.de/__cypress/runner/cypress_runner.js:1671:18)\n    at Promise._fulfill (https://www.amazon.de/__cypress/runner/cypress_runner.js:1615:18)\n    at <unknown> (https://www.amazon.de/__cypress/runner/cypress_runner.js:5420:46)\nFrom Your Spec Code:\n    at captureUserInvocationStack (https://www.amazon.de/__cypress/runner/cypress_runner.js:138885:94)\n    at Assertion.assert (https://www.amazon.de/__cypress/runner/cypress_runner.js:138913:9)\n    at Assertion.<anonymous> (https://www.amazon.de/__cypress/runner/cypress_runner.js:138855:25)\n    at Assertion.overwritingPropertyGetter (https://www.amazon.de/__cypress/runner/cypress_runner.js:78003:37)\nat Reflect.get (<anonymous>)\n    at Object.proxyGetter [as get] (https://www.amazon.de/__cypress/runner/cypress_runner.js:77869:22)\n    at exists (https://www.amazon.de/__cypress/runner/cypress_runner.js:142734:26)\n    at elExists (https://www.amazon.de/__cypress/runner/cypress_runner.js:142749:10)\n    at ensureExistence (https://www.amazon.de/__cypress/runner/cypress_runner.js:142930:22)\n    at onFailFn (https://www.amazon.de/__cypress/runner/cypress_runner.js:142959:53)",
+                "diff": null
+              },
+              "uuid": "7c4559d1-6699-4cd8-aa1e-dd8e6c84280a",
+              "parentUUID": "71ca065b-f606-4795-a9fd-c77d94e644ec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7c4559d1-6699-4cd8-aa1e-dd8e6c84280a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 7807,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

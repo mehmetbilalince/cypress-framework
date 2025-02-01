@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-02-01T14:37:21.981Z",
+    "end": "2025-02-01T14:37:27.332Z",
+    "duration": 5351,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6327178a-3a28-4007-a8d7-f4809b74b9f6",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/ViewportKullanimi.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/ViewportKullanimi.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "85ecef20-687c-4809-ae7d-b78e96cfb67f",
+          "title": "Viewport Kullanımı",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "viewport with numbers",
+              "fullTitle": "Viewport Kullanımı viewport with numbers",
+              "timedOut": null,
+              "duration": 1660,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1200, 1000);\ncy.visit('https://shopist.io/');",
+              "err": {},
+              "uuid": "0901535a-7791-4764-94af-1bc52635f9b5",
+              "parentUUID": "85ecef20-687c-4809-ae7d-b78e96cfb67f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "viewport with string",
+              "fullTitle": "Viewport Kullanımı viewport with string",
+              "timedOut": null,
+              "duration": 811,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"/udemy-cypress-egitim/ViewportKullanimi.cy.js/Viewport Kullanımı -- viewport with string (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.viewport('mackbook-16');\ncy.visit('https://shopist.io/');",
+              "err": {
+                "message": "CypressError: `cy.viewport()` could not find a preset for: `mackbook-16`. Available presets are: macbook-16, macbook-15, macbook-13, macbook-11, ipad-2, ipad-mini, iphone-xr, iphone-x, iphone-6+, iphone-se2, iphone-8, iphone-7, iphone-6, iphone-5, iphone-4, iphone-3, samsung-s10, samsung-note9\n\nhttps://on.cypress.io/viewport",
+                "estack": "CypressError: `cy.viewport()` could not find a preset for: `mackbook-16`. Available presets are: macbook-16, macbook-15, macbook-13, macbook-11, ipad-2, ipad-mini, iphone-xr, iphone-x, iphone-6+, iphone-se2, iphone-8, iphone-7, iphone-6, iphone-5, iphone-4, iphone-3, samsung-s10, samsung-note9\n\nhttps://on.cypress.io/viewport\n    at getPresetDimensions (https://shopist.io/__cypress/runner/cypress_runner.js:135687:74)\n    at Context.viewport (https://shopist.io/__cypress/runner/cypress_runner.js:135714:28)\n    at wrapped (https://shopist.io/__cypress/runner/cypress_runner.js:137875:43)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress-project/./cypress/e2e/udemy-cypress-egitim/ViewportKullanimi.cy.js:7:11)",
+                "diff": null
+              },
+              "uuid": "4f281fe9-3c48-40fb-b6d2-6c09fe023005",
+              "parentUUID": "85ecef20-687c-4809-ae7d-b78e96cfb67f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "viewport with string",
+              "fullTitle": "Viewport Kullanımı viewport with string",
+              "timedOut": null,
+              "duration": 166,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport('iphone-se2');\ncy.visit('https://shopist.io/');",
+              "err": {},
+              "uuid": "d6340102-bac4-424a-8fd2-2c5765880b02",
+              "parentUUID": "85ecef20-687c-4809-ae7d-b78e96cfb67f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0901535a-7791-4764-94af-1bc52635f9b5",
+            "d6340102-bac4-424a-8fd2-2c5765880b02"
+          ],
+          "failures": [
+            "4f281fe9-3c48-40fb-b6d2-6c09fe023005"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2637,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

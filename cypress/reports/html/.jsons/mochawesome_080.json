@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-01T14:33:42.002Z",
+    "end": "2025-02-01T14:33:53.093Z",
+    "duration": 11091,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "62969f74-5038-4dcb-9dfc-07b1923f89e4",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/LoadingBar.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/LoadingBar.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e5b414f0-ffdf-4de0-a744-94004c813988",
+          "title": "Loading Bar Testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Loading bar",
+              "fullTitle": "Loading Bar Testing Loading bar",
+              "timedOut": null,
+              "duration": 7328,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://the-internet.herokuapp.com/dynamic_loading/1');\ncy.get('button').click();\ncy.get('#loading', {\n  timeout: 10000\n}).should('have.attr', 'style', 'display: none;');\ncy.get('#finish > h4').should('be.visible').and('contain', 'Hello World');",
+              "err": {},
+              "uuid": "bad2423b-6d4f-46b2-a254-a23820072ce9",
+              "parentUUID": "e5b414f0-ffdf-4de0-a744-94004c813988",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bad2423b-6d4f-46b2-a254-a23820072ce9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7328,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

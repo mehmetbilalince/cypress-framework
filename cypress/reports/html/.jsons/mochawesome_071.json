@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-01T14:31:14.002Z",
+    "end": "2025-02-01T14:31:23.017Z",
+    "duration": 9015,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dab03032-625b-498b-972b-a3292b256455",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/BeforeEachAfterEach.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/BeforeEachAfterEach.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c9156af5-8619-436f-ac66-77312b477501",
+          "title": "BeforeEach AfterEach Kullanımı",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Başlığı Doğrula",
+              "fullTitle": "BeforeEach AfterEach Kullanımı Başlığı Doğrula",
+              "timedOut": null,
+              "duration": 2955,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', \"Automation Exercise\");",
+              "err": {},
+              "uuid": "e587ee34-f236-48bf-8ab2-fa249f12b78e",
+              "parentUUID": "c9156af5-8619-436f-ac66-77312b477501",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Url Doğrula",
+              "fullTitle": "BeforeEach AfterEach Kullanımı Url Doğrula",
+              "timedOut": null,
+              "duration": 2340,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('include', \"automation\");",
+              "err": {},
+              "uuid": "eeda5185-e076-4481-b8d3-7c6837b6041f",
+              "parentUUID": "c9156af5-8619-436f-ac66-77312b477501",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e587ee34-f236-48bf-8ab2-fa249f12b78e",
+            "eeda5185-e076-4481-b8d3-7c6837b6041f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5295,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

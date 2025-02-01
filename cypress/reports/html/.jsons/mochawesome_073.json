@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-01T14:31:48.744Z",
+    "end": "2025-02-01T14:31:58.608Z",
+    "duration": 9864,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4b5f6304-16d1-4e53-811c-35774cc1554f",
+      "title": "",
+      "fullFile": "cypress/e2e/udemy-cypress-egitim/CustomCommandsKullanimi.cy.js",
+      "file": "cypress/e2e/udemy-cypress-egitim/CustomCommandsKullanimi.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "45a74a38-7278-4181-af58-ba97044237a2",
+          "title": "Custom Commands",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Custom Commands Ornekler Invalid username Valid pasword",
+              "fullTitle": "Custom Commands Custom Commands Ornekler Invalid username Valid pasword",
+              "timedOut": null,
+              "duration": 3898,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('deneme@123.com', '12345');",
+              "err": {},
+              "uuid": "5648de9a-f210-49bf-9b34-2622f88cff1b",
+              "parentUUID": "45a74a38-7278-4181-af58-ba97044237a2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Custom Commands Ornekler Valid username Invalid password",
+              "fullTitle": "Custom Commands Custom Commands Ornekler Valid username Invalid password",
+              "timedOut": null,
+              "duration": 2843,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('deneme@abd.com', 'parola2');",
+              "err": {},
+              "uuid": "0e929477-28de-462c-9d4e-087cf02d3113",
+              "parentUUID": "45a74a38-7278-4181-af58-ba97044237a2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5648de9a-f210-49bf-9b34-2622f88cff1b",
+            "0e929477-28de-462c-9d4e-087cf02d3113"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6741,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
